@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const cars1 = ["AUDI","BMW","TATA","MERCEDES"];
+    const cars2 = [...cars1];
+    const cars3 = [...cars1,"NISSAN","TOYOTA"];
+    document.write(cars2 + "<br>");
+    document.write(cars3 + "<br>");
+    const moto1 = ["honda","yamaha","kia"];
+   const moto2 = ["sirius","sh","airblade"];
+   const moto3 = [...moto1,...moto2];
+    document.write(moto3 + "<br>");
+    const bike1 = {
+        name: "taurus",
+        color : "red"
+    }
+    const bike2 = {
+        name: "dream",
+        color : "black",
+        year : 2022,
+    }
+const bike3 = {...bike1,...bike2};
+    console.log(bike3);
+    const car = "toyota";
+    const newcar = [...car];
+    document.write(newcar + "<br>");
+    const number = [1,2,5,6,8,9];
+    const [a,b,c,...other] = number;
+    document.write(a +"<br>")
+    document.write(b +"<br>")
+    document.write(c +"<br>")
+    document.write(other +"<br>")
+
+</script>
+</body>
+</html>
